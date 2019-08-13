@@ -34,9 +34,13 @@ class ContaBanco {
         minhaConta.saca(saque);
         
         //deposito de 200 reais
-        //minhaConta.deposita(200);
+        System.out.println("Quanto quer depositar? ");
+        int deposito = input.nextInt();
+        minhaConta.deposita(deposito);
+        
         
         System.out.println("Olá " + minhaConta.titular + " bem vindo de volta");
         System.out.println("Saldo Atual: " + minhaConta.saldo);
     }  
 }
+
